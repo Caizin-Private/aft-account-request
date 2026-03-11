@@ -1,5 +1,5 @@
 module "slf_tooling" {
-  source = "./modules/aft-account-request"
+  source = "../../modules/aft-account-request"
 
   control_tower_parameters = {
     AccountEmail              = "awsadmin+sandbox+slf-tooling@caizin.com"
@@ -13,11 +13,18 @@ module "slf_tooling" {
   account_tags = {
     Environment = "Sandbox"
     ManagedBy   = "AFT"
-    Project     = "slf"
+    Project     = "solifi"
   }
 
   change_management_parameters = {
     change_requested_by = "Mohit Kunjir"
-    change_reason       = "Provision slf-tooling account in Sandbox OU"
+    change_reason       = "Provision Solifi tooling account in Sandbox OU"
   }
+
+  custom_fields = {
+    group = "non-prod"
+  }
+
+  account_customizations_name = "sandbox"
+
 }
