@@ -25,5 +25,5 @@ module "dqs" {
     group = "non-prod"
   }
 
-  account_customizations_name = "dqs"
+  account_customizations_name = "sandbox"
 }
