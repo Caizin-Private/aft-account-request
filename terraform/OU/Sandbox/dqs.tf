@@ -18,7 +18,7 @@ module "dqs" {
 
   change_management_parameters = {
     change_requested_by = "Mohit Kunjir"
-    change_reason       = "Provision DQS sandbox account for Caizin internal project"
+    change_reason       = "Re-trigger enrollment after removing unsupported OpenSearch SSO policy"
   }
 
   custom_fields = {
