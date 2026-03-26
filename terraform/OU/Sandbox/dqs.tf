@@ -18,7 +18,7 @@ module "dqs" {
 
   change_management_parameters = {
     change_requested_by = "Mohit Kunjir"
-    change_reason       = "Re-trigger enrollment after removing unsupported OpenSearch SSO policy"
+    change_reason       = "Re-trigger enrollment after removing all unsupported OpenSearch SSO policies"
   }
 
   custom_fields = {
